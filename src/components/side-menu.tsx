@@ -3,9 +3,9 @@ import Image from "next/image";
 const SideMenu = () => {
   return (
     <div
-      className={`w-[407px] shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white flex flex-col items-start justify-start pt-[47.9px] px-[37px] pb-[101px] box-border gap-[85px] max-w-full text-left text-lg-6 text-black font-poppins lg:pt-[31px] lg:pb-[66px] lg:box-border`}
+      className="w-[407px] shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white flex flex-col items-start justify-start pt-[47.9px] px-[37px] pb-[101px] box-border max-w-full text-left text-lg-6 text-black font-poppins sticky max-xl:hidden"
     >
-      <div className="w-[407px] h-[1593.3px] relative shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white hidden max-w-full" />
+      <div className="w-[407px] h-screen max:h-[1593.3px] relative shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white hidden max-w-full" />
       <div className="flex flex-row items-start justify-start gap-[4.8px] text-15xl-6">
         <div className="flex flex-row items-start justify-start gap-[10.7px] z-[1]">
           <div className="flex flex-col items-start justify-start pt-[1.3px] px-0 pb-0">
@@ -28,7 +28,7 @@ const SideMenu = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[448.3px] box-border gap-[53.2px] max-w-full text-lightslategray">
+      <div className="self-stretch flex flex-col items-start justify-start px-0 pb-[100px] box-border gap-[53.2px] max-w-full text-lightslategray pt-10">
         <div className="flex flex-row items-start justify-start py-0 px-3.5">
           <div className="flex flex-row items-start justify-start gap-[18.6px] z-[1]">
             <Image
@@ -46,7 +46,7 @@ const SideMenu = () => {
             </div>
           </div>
         </div>
-        <div className="self-stretch flex flex-col items-end justify-start gap-[38.6px] max-w-full">
+        <div className="self-stretch flex flex-col items-end justify-start gap-[28.6px] max-w-full">
           <button className="self-stretch flex flex-row items-start justify-end py-0 pl-[15px] pr-2.5">
             <div className="flex-1 flex flex-row items-end justify-between gap-5 z-[1] cursor-pointer">
               <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
@@ -242,7 +242,7 @@ const SideMenu = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

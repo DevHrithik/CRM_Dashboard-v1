@@ -3,15 +3,15 @@ import Image from "next/image";
 const SideMenu = () => {
   return (
     <div
-      className="w-[407px] shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white flex flex-col items-start justify-start pt-[47.9px] px-[37px] pb-[101px] box-border max-w-full text-left text-lg-6 text-black font-poppins sticky max-xl:hidden"
+      className="shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white flex flex-col items-start justify-start pt-[47.9px] px-[37px] pb-[11px] box-border max-w-full text-left text-lg-6 text-black font-poppins h-dvh w-dvh sticky top-0 max-xl:hidden"
     >
-      <div className="w-[407px] h-screen max:h-[1593.3px] relative shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white hidden max-w-full" />
+      <div className="h-screen relative shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] bg-white hidden" />
       <div className="flex flex-row items-start justify-start gap-[4.8px] text-15xl-6">
-        <div className="flex flex-row items-start justify-start gap-[10.7px] z-[1]">
+        <div className="flex flex-row items-center justify-start gap-[10.7px] z-[1]">
           <div className="flex flex-col items-start justify-start pt-[1.3px] px-0 pb-0">
             <Image
-              height={49.2}
-              width={49.2}
+              height={37}
+              width={37}
               className="relative overflow-hidden shrink-0"
               loading="lazy"
               alt=""
@@ -28,12 +28,12 @@ const SideMenu = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-col items-start justify-start px-0 pb-[100px] box-border gap-[53.2px] max-w-full text-lightslategray pt-10">
+      <div className="self-stretch flex flex-col items-start justify-start px-0 pb-[100px] box-border gap-[40px] max-w-full text-lightslategray pt-10">
         <div className="flex flex-row items-start justify-start py-0 px-3.5">
           <div className="flex flex-row items-start justify-start gap-[18.6px] z-[1]">
             <Image
-              height={31.9}
-              width={31.9}
+              height={24}
+              width={24}
               className="relative overflow-hidden shrink-0 min-h-[32px]"
               loading="lazy"
               alt=""
@@ -48,11 +48,11 @@ const SideMenu = () => {
         </div>
         <div className="self-stretch flex flex-col items-end justify-start gap-[28.6px] max-w-full">
           <button className="self-stretch flex flex-row items-start justify-end py-0 pl-[15px] pr-2.5">
-            <div className="flex-1 flex flex-row items-end justify-between gap-5 z-[1] cursor-pointer">
+            <div className="flex-1 flex flex-row items-end justify-between gap-3 z-[1] cursor-pointer">
               <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
                 <Image
-                  height={31.9}
-                  width={31.9}
+                  height={24}
+                  width={24}
                   className="relative overflow-hidden shrink-0 min-h-[32px]"
                   loading="lazy"
                   alt=""
@@ -66,8 +66,8 @@ const SideMenu = () => {
               </div>
               <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5.3px]">
                 <Image
-                  height={21.3}
-                  width={21.3}
+                  height={16}
+                  width={16}
                   className="relative overflow-hidden shrink-0"
                   alt=""
                   src="/chevronright-2.svg"
@@ -82,8 +82,8 @@ const SideMenu = () => {
                 <div className="flex-1 flex flex-row items-end justify-between gap-5 z-[2]">
                   <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
                     <Image
-                      height={31.9}
-                      width={31.9}
+                      height={24}
+                      width={24}
                       className="relative overflow-hidden shrink-0 min-h-[32px]"
                       loading="lazy"
                       alt=""
@@ -97,8 +97,8 @@ const SideMenu = () => {
                   </div>
                   <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5.2px]">
                     <Image
-                      height={21.3}
-                      width={21.3}
+                      height={16}
+                      width={16}
                       className="relative overflow-hidden shrink-0"
                       alt=""
                       src="/chevronright-2-1.svg"
@@ -110,8 +110,8 @@ const SideMenu = () => {
                 <div className="flex-1 flex flex-row items-start justify-between shrink-0 gap-5 z-[1]">
                   <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
                     <Image
-                      height={31.9}
-                      width={31.9}
+                      height={24}
+                      width={24}
                       className="relative overflow-hidden shrink-0 min-h-[32px]"
                       loading="lazy"
                       alt=""
@@ -125,8 +125,8 @@ const SideMenu = () => {
                   </div>
                   <div className="flex flex-col items-start justify-start pt-[5.3px] px-0 pb-0">
                     <Image
-                      height={21.3}
-                      width={21.3}
+                      height={16}
+                      width={16}
                       className="relative overflow-hidden shrink-0"
                       alt=""
                       src="/chevronright-2.svg"
@@ -139,8 +139,8 @@ const SideMenu = () => {
               <div className="flex-1 flex flex-row items-end justify-between gap-5 z-[1]">
                 <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
                   <Image
-                    height={31.9}
-                    width={31.9}
+                    height={24}
+                    width={24}
                     className="relative overflow-hidden shrink-0 min-h-[32px]"
                     loading="lazy"
                     alt=""
@@ -154,8 +154,8 @@ const SideMenu = () => {
                 </div>
                 <div className="flex flex-col items-start justify-end pt-0 px-0 pb-[5.3px]">
                   <Image
-                    height={21.3}
-                    width={21.3}
+                    height={16}
+                    width={16}
                     className="relative overflow-hidden shrink-0"
                     alt=""
                     src="/chevronright-2.svg"
@@ -164,26 +164,26 @@ const SideMenu = () => {
               </div>
             </button>
             <button className="self-stretch flex flex-row items-start justify-end py-0 pl-[15px] pr-2.5">
-              <div className="flex-1 flex flex-row items-start justify-between gap-5 z-[1]">
+              <div className="flex-1 flex flex-row items-start justify-between gap-3 z-[1]">
                 <div className="flex flex-row items-start justify-start gap-[18.6px] shrink-0">
                   <Image
-                    height={31.9}
-                    width={31.9}
+                    height={24}
+                    width={24}
                     className="relative overflow-hidden shrink-0 min-h-[32px]"
                     loading="lazy"
                     alt=""
                     src="/messagequestion-1.svg"
                   />
                   <div className="flex flex-col items-start justify-start pt-[2.7px] px-0 pb-0">
-                    <div className="relative tracking-[-0.01em] font-medium inline-block min-w-[42px] shrink-0">
+                    <div className="relative tracking-[-0.01em] font-medium inline-block shrink-0">
                       Help
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-col items-start justify-start pt-[5.3px] px-0 pb-0">
                   <Image
-                    height={21.3}
-                    width={21.3}
+                    height={16}
+                    width={16}
                     className="relative overflow-hidden shrink-0"
                     alt=""
                     src="/chevronright-2.svg"
@@ -196,7 +196,7 @@ const SideMenu = () => {
       </div>
       <div className="self-stretch flex flex-col items-start justify-start gap-[61.2px] max-w-full text-center text-white">
         <div className="self-stretch rounded-7xl-6 [background:linear-gradient(107.91deg,_#eaabf0,_#4623e9)] flex flex-col items-start justify-start pt-[34.6px] pb-[29.2px] pl-8 pr-[30px] box-border gap-[26.5px] max-w-full z-[1]">
-          <div className="w-[332.5px] h-[199.5px] relative rounded-7xl-6 [background:linear-gradient(107.91deg,_#eaabf0,_#4623e9)] hidden max-w-full" />
+          <div className="w-[300px] h-[150px] relative rounded-7xl-6 [background:linear-gradient(107.91deg,_#eaabf0,_#4623e9)] hidden max-w-full" />
           <div className="self-stretch flex flex-row items-start justify-start py-0 pl-[13px] pr-3.5">
             <div className="flex-1 relative tracking-[0.01em] font-semibold whitespace-pre-wrap z-[1]">
               Upgrade to PRO to get access all Features!

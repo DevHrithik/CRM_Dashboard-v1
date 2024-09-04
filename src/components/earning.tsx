@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Earning = () => {
   return (
-    < div className="flex flex-col md:flex-row shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] text-left text-lg-6 text-darkgray font-poppins pl-[30px] lg:pl-[66px] py-[32px] pr-[60px] lg:pr-[88px] my-[40px] bg-white rounded-20xl-9 overflow-hidden w-auto " >
-      <div className="pt-[1.3px] px-0 pb-12">
+    < div className="flex self-stretch flex-col justify-center items-center lg:justify-around md:flex-row shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] text-left text-lg-6 text-darkgray font-poppins pl-[30px] lg:pl-[66px] py-[32px] pr-[60px] lg:pr-[88px] my-[40px] bg-white rounded-20xl-9 overflow-hidden w-auto pb-12" >
+      <div className="pt-[1.3px] px-0 pb-0">
         <div className="flex flex-row items-start justify-start gap-[26.6px]">
           <Image
             height={84}

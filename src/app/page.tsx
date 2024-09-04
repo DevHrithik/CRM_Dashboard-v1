@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Earning from "@/components/earning";
-import { PeopleDataTable } from "@/table/data-table";
+import PeopleDataTable from "@/table/data-table";
 import { columns } from "@/table/columns";
 import { people } from "@/table/people";
 import SideMenu from "@/components/side-menu";
 
 export default function Home() {
   return (
-    <div className="flex flex-row m-7 md:m-0">
+    <div className="flex flex-row">
       <SideMenu />
-      <div className="w-full lg:ml-[71px] lg:mr-[95px] overflow-hidden">
-        <div className="flex flex-col items-center h-full">
+      <div className="w-full lg:mr-[80px]">
+        <div className="flex flex-col items-center h-full lg:mr-[60px] sm:mx-[40px]">
           <div className="flex flex-col md:flex-row items-center justify-between px-[30px] py-[30px] gap-5 w-full">
             <div className="flex flex-col items-start justify-start pt-[1.4px] px-0 pb-0">
               <div className="relative font-medium whitespace-nowrap text-7xl">

@@ -21,7 +21,7 @@ import {
 import React from "react";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -30,15 +30,15 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
 }
 
-export function PeopleDataTable<TData, TValue>({
+export default function PeopleDataTable<TData, TValue>({
   columns,
   data,
 }: DataTableProps<TData, TValue>) {
@@ -59,7 +59,7 @@ export function PeopleDataTable<TData, TValue>({
   });
 
   return (
-    <div className="shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] rounded-20xl-9 bg-white flex flex-col items-center justify-start pt-[39.9px] mx-[20px] pb-[53.2px] box-border gap-[53.1px] mt-[40px] text-left text-10xl-3 text-black font-poppins w-full h-full overflow-hi">
+    <div className="shadow-[0px_13.3px_79.8px_rgba(226,_236,_249,_0.5)] rounded-20xl-9 bg-white flex flex-col items-start justify-start lg:justify-between pt-[39.9px] mx-[20px] pb-[53.2px] box-border gap-[53.1px] mt-[40px] text-left text-10xl-3 text-black font-poppins w-full h-full overflow-hidden">
       <div className="flex flex-col lg:flex-row md:pl-[38px] overflow-y-auto">
         <div className="flex flex-col pl-9 items-start justify-start gap-[9.2px]">
           <div className="relative tracking-[-0.01em] font-semibold truncate">
@@ -70,7 +70,7 @@ export function PeopleDataTable<TData, TValue>({
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center">
-          <div className="pl-9 pt-5 lg:pl-[106px] md:pr-[41px] flex flex-col md:flex-row items-start justify-start gap-[30px] xs:gap-[52px] max-w-full">
+          <div className="pl-9 pt-5 lg:pl-[66px] md:pr-[41px] flex flex-col md:flex-row items-start justify-start gap-[30px] xs:gap-[52px] max-w-full">
             <div className="w-[216px] rounded-sm-3 flex flex-row items-start justify-start py-[9.3px] px-2.5 box-border gap-[10.7px] z-[1]">
               <Image
                 height={31.9}
@@ -114,13 +114,16 @@ export function PeopleDataTable<TData, TValue>({
           <div className="flex items-end justify-end sm:pr-[41px]">
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="cursor-pointer [border:none] mt-6 xl:py-[10px] px-[34px] md:px-[45px] bg-ghostwhite-200 text-[#7E7E7E]rounded-sm-3 hover:bg-gainsboro-200 text-[18px] font-normal font-poppins leading-[18px]">Add Customer</Button>
+                <Button className="cursor-pointer [border:none] mt-6 xl:py-[10px] px-[34px] md:px-[45px] bg-ghostwhite-200 text-[#7E7E7E]rounded-sm-3 hover:bg-gainsboro-200 text-[18px] font-normal font-poppins leading-[18px] lg:px-[20px]">
+                  Add Customer
+                </Button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[425px] bg-white">
                 <DialogHeader>
                   <DialogTitle>Edit profile</DialogTitle>
                   <DialogDescription>
-                    Make changes to your profile here. Click save when youre done.
+                    Make changes to your profile here. Click save when youre
+                    done.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
@@ -258,6 +261,6 @@ export function PeopleDataTable<TData, TValue>({
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
